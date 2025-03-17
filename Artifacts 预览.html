@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 尝试自动跳转邮件客户端
+        window.location.href = 'mailto:xlijexe01@clubmed.com';
+        // 1秒后显示手动按钮（iOS需用户点击）
+        setTimeout(function() {
+            document.getElementById('manual-prompt').style.display = 'block';
+        }, 1000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .btn {
+            padding: 12px 24px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="manual-prompt" style="display: none;">
+        <p>点击下方按钮自动填写总经理邮箱：</p>
+        <a href="mailto:xlijexe01@clubmed.com" class="btn">发送邮件</a>
+    </div>
+</body>
+</html>
